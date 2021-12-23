@@ -11,10 +11,7 @@ int main(){
     printf("your equation is %.2fx^2+%.2fx+%.2f\n",a,b,c);
     roots(a,b,c);
 
-
-
-
-    return 0;
+return 0;
 }
 
 int roots(float x, float y, float z){
@@ -24,7 +21,7 @@ int roots(float x, float y, float z){
     else if(determinant(x,y,z) > 0)
         printf("x1 = %.2f",root1(x,y,determinant(x,y,z)));
         printf("x2 = %.2f",root2(x,y,determinant(x,y,z)));
-    printf("%f",determinant(x,y,z)>0);
+        printf("%f",determinant(x,y,z)>0);
 return 0;
 }
 
