@@ -59,17 +59,44 @@ int dimension;
 printf("dimension?(2 or 3)\n>");
 scanf("%d",&dimension);
 if (dimension == 2){
-    printf("how many sides are equal?\n4=square\n2=rectangle")
+    printf("how many sides are equal?\n4=square\n2=rectangle");
 }
 return 0;
 }
+
+
 int triangle(){
 int dimension;
+float a,b,c,peri;
 printf("dimension?(2 or 3)\n>");
+scanf("%d",&dimension);
+if (dimension==2){
+printf("give 3 sides of your triangle(space or line break separated numbers)\n>");
+scanf("%f%f%f",&a,&b,&c);
+peri = a+b+c;
+printf("perimeter is : %.3f\n",peri);
+peri = peri/2;
+printf("area is : %.3f\n",peri*(peri-a)*(peri-b)*(peri-c));
+}
+else if (dimension==3){
+
+}
+else
+    printf("our geometric calculator only support till 3 dimension\n");
 return 0;
 }
+
+
 int rectangle(){
 int dimension;
+if (dimension==2){
+
+}
+else if (dimension==3){
+
+}
+else
+    printf("our geometric calculator only support till 3 dimension\n");
 printf("dimension?(2 or 3)\n>");
 return 0;
 }
