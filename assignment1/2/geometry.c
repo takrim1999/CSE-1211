@@ -70,13 +70,17 @@ int dimension;
 float a,b,c,peri;
 printf("dimension?(2 or 3)\n>");
 scanf("%d",&dimension);
-if (dimension==2){
-printf("give 3 sides of your triangle(space or line break separated numbers)\n>");
-scanf("%f%f%f",&a,&b,&c);
-peri = a+b+c;
-printf("perimeter is : %.3f\n",peri);
-peri = peri/2;
-printf("area is : %.3f\n",peri*(peri-a)*(peri-b)*(peri-c));
+if (dimension==2){    
+    printf("give 3 sides of your triangle(space or line break separated numbers)\n>");
+    scanf("%f%f%f",&a,&b,&c);
+    if((a+b)>c&&(b+c)>a&&(a+c)>b){
+        peri = a+b+c;
+        printf("perimeter is : %.3f\n",peri);
+        peri = peri/2;
+        printf("area is : %.3f\n",peri*(peri-a)*(peri-b)*(peri-c));
+    }
+    else
+        printf("triangle can't be formed!");
 }
 else if (dimension==3){
 float d;
