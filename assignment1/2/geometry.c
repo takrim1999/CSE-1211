@@ -79,6 +79,13 @@ peri = peri/2;
 printf("area is : %.3f\n",peri*(peri-a)*(peri-b)*(peri-c));
 }
 else if (dimension==3){
+float d;
+printf("give 3 sides of your prism(space or line break separated numbers)\n>");
+scanf("%f%f%f",&a,&b,&c);
+peri = a+b+c;
+printf("perimeter is : %.3f\n",peri);
+peri = peri/2;
+printf("area is : %.3f\n",peri*(peri-a)*(peri-b)*(peri-c));
 
 }
 else
@@ -89,14 +96,16 @@ return 0;
 
 int rectangle(){
 int dimension;
+float a,b;
 if (dimension==2){
-
+printf("input your two sides (space or line break seperated numbers)");
+scanf("%f%f",&a,&b);
 }
 else if (dimension==3){
 
 }
 else
-    printf("our geometric calculator only support till 3 dimension\n");
+printf("our geometric calculator only support till 3 dimension\n");
 printf("dimension?(2 or 3)\n>");
 return 0;
 }
