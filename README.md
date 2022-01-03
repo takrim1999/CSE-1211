@@ -1,4 +1,4 @@
-# CSE-1211
+# CSE-1292
 
 ## This is where i push all of my assignments of my CSE-1292 course.It can be useful for you if you want ideas.
 
