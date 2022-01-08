@@ -1,17 +1,23 @@
 #include<stdio.h>
-int power(float x, float y);
+float power(float x, int n);
 int main(){
-    float y,x;
-    printf("the number you want to calculate power of\n>");
-    scanf("%f",&y);
+    float x;
+    int n;
     printf("the number you want to calculate to the power\n>");
     scanf("%f",&x);
-    printf("%.2f to the power %d is %.2f",x,power(x,y),y);
+    printf("power?\n>");
+    scanf("%d",&n);
+    printf("%.2f to the power %d is %.2f",x,n,power(x,n));
     return 0;
 }
 
-int power(float x, float y){
-    int n = 0;
-    
-    return n;
+float power(float x, int n){
+    float y = 1;
+    for(int i = n/2;i>0;i--){
+        y = y*(x*x);
+    }
+    if(n%2==1){
+        y = y*x;
+    }
+    return y;
 }
