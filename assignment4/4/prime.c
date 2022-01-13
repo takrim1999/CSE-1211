@@ -13,7 +13,8 @@ int main(){
 int prime(int s, int e){
     int plist[e-s+1];
     for(int i = 0; i<=(e-s+1); i++){
-        plist[i] = i;
+        plist[i] = s;
+        s++;
     }
     for(int i = 0; i<(e-s); i++){
         printf("%d\n",plist[i]);
