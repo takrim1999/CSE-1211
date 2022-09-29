@@ -15,9 +15,9 @@ int main(){
     
     /////// for 3dimensional co ordinates:
     else if(dimension == 3){
-        printf("input your x1 and y1:");
+        printf("input your x1,y1 and z1:");
         scanf("%d%d%d",&x1,&y1,&z1);
-        printf("input your x2 and y2:");
+        printf("input your x2,y2 and z2:");
         scanf("%d%d%d",&x2,&y2,&z2);
         printf("your distance is %f\n", sqrt(pow(x1-x2,2)+pow(y1-y2,2)+pow(z1-z2,2)));
     }

@@ -80,17 +80,25 @@ if (dimension==2){
         printf("area is : %.3f\n",peri*(peri-a)*(peri-b)*(peri-c));
     }
     else
-        printf("triangle can't be formed!");
+        printf("triangle can't be formed!\n");
 }
 else if (dimension==3){
-float d;
+float d,area;
 printf("give 3 sides of your prism(space or line break separated numbers)\n>");
 scanf("%f%f%f",&a,&b,&c);
-peri = a+b+c;
-printf("perimeter is : %.3f\n",peri);
-peri = peri/2;
-printf("area is : %.3f\n",peri*(peri-a)*(peri-b)*(peri-c));
-
+    if((a+b)>c&&(b+c)>a&&(a+c)>b)
+    {
+    printf("width of triangle: ");
+    scanf("%f",&d);
+    peri = a+b+c;
+    printf("perimeter is : %.3f\n",peri);
+    peri = peri/2;
+    area = peri*(peri-a)*(peri-b)*(peri-c);
+    printf("Area is : %.3f\n",(area+area+(a*d)+(b*d)+(c*d)));
+    printf("Volume is: %.3f\n",area*d);
+    }
+    else
+        printf("triangle can't be formed!\n");
 }
 else
     printf("our geometric calculator only support till 3 dimension\n");
